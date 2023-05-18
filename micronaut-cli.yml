@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.example
+testFramework: spock
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [app-name, email-javamail, email-template, gradle, http-client-test, jackson-databind, kotlin, kotlin-application, ksp, logback, micronaut-build, netty-server, properties, readme, shade, spock]

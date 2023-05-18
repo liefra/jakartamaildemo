@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: jakartamaildemo
+---
+netty.default.allocator.max-order: 3
+---
+app:
+  ocimail:
+    smtp:
+      user: ${SMTP_USER}
+      password: ${SMTP_PASSWORD}
+
+---
+javamail:
+  properties:
+    mail:
+      smtp:
+        port: 587
+        auth: true
+        starttls:
+          enable: true
+        host: ${SMTP_HOST:smtp.email.oci.oraclecloud.com}
